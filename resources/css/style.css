@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.3rem;
+}
+body {
+    background-color: #242424;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1c1c1c 10px ), repeating-linear-gradient( #49dc7a55, #2955c3 );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+section {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px 0;
+}
+.box {
+    width: 450px;
+    padding: 40px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.218);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+.box.large {
+    display: flex;
+    width: calc((3*450px) + 80px);
+    flex-direction: row;
+}
+.box.large .img-w {
+    height: 100px;
+    width: 100px !important;
+}
+.box.large .text {
+    display: flex;
+    flex-direction: column;
+    /*width: calc(100% - 200px);*/
+    width: calc(100% - 0px);
+    text-align: center;
+    gap: 20px;
+}
+.box .img-w {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-w img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+footer {
+    background-color: rgb(32, 32, 32);
+    min-height: 80px;
+    width: 100%;
+}
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer .footer-content h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+footer .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+footer .footer-content .socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+footer .footer-content .socials li {
+    margin: 0 10px;
+}
+footer .footer-content .socials li a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer-content .socials li a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+footer .footer-content .socials li a i:hover {
+    color: rgb(190, 207, 225);
+}
